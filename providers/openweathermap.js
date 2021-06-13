@@ -452,7 +452,6 @@ WeatherProvider.register("openweathermap", {
 	 * return String - URL params.
 	 */
 	getParams() {
-		Log.log(this.config);
 		let params = "?";
 		if (this.config.weatherEndpoint === "/onecall") {
 			params += "lat=" + this.config.lat;
